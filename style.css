@@ -1,0 +1,93 @@
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* Ensure the content takes up full viewport height */
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    margin-top: 20px;
+    font-size: 32px;
+    color: #333;
+}
+
+input[type="file"] {
+    display: none; /* Hide the file input visually */
+}
+
+.control-panel {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.label-container {
+    display: flex;
+    justify-content: space-between;
+    width: 200px;
+    margin-top: 10px;
+}
+
+.label-container label {
+    font-size: 18px;
+    color: #555;
+}
+
+.checkbox-container {
+    display: flex;
+    align-items: center;
+    margin-top: 5px;
+}
+
+.checkbox-container input[type="checkbox"] {
+    margin-left: 8px;
+}
+
+.file-upload-container {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.file-upload-container label {
+    font-size: 18px;
+    color: #555;
+    cursor: pointer;
+    padding: 8px 12px;
+    background-color: #f5f5f5;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.file-upload-container label:hover {
+    background-color: #e0e0e0;
+}
+
+.file-upload-container input[type="file"] {
+    display: none;
+}
+
+canvas {
+    border: 1px solid #ccc;
+    margin-top: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 50%; /* Make the canvas round */
+    width: 500px; /* Set fixed width for 1:1 aspect ratio */
+    height: 500px; /* Set fixed height for 1:1 aspect ratio */
+    max-width: 100%; /* Ensure the canvas doesn't exceed its container */
+    max-height: 100%; /* Ensure the canvas doesn't exceed its container */
+    image-rendering: pixelated; /* Maintain pixelated look for 1:1 rendering */
+}
